@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.maxinchun'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 加入 lib 目录下的 jar 包依赖
+    compile fileTree(dir: 'lib', includes: ['*.jar'])
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
