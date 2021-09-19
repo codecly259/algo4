@@ -12,5 +12,8 @@ repositories {
 dependencies {
     // 加入 lib 目录下的 jar 包依赖
     compile fileTree(dir: 'lib', includes: ['*.jar'])
+    // keepass java 客户端, 可以操作 keepass 的密码数据库文件
+    compile ("org.linguafranca.pwdb:KeePassJava2:2.1.4")
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
